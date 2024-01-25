@@ -4,9 +4,9 @@
     background-color:blue;
 }
 
-@media screen and (orientation:portrait){
+@media screen and (orientation:landscape){
     #fullPage{
-        width:100%;
+        width: 50%;
         height:500px;
         background-color:red;
     }
