@@ -16,6 +16,22 @@
           <button style="width:100%; height:100px;" onclick="t(event);">Click Me!</button>
         </div>
 
+ <!-- The `label` is attached to the hidden file input -->
+ <label for="cameraFileInput">
+    <span class="btn">Open camera</span>
+
+    <!-- The hidden file `input` for opening the native camera -->
+    <input
+      id="cameraFileInput"
+      type="file"
+      accept="image/*"
+      capture="environment"
+    />
+  </label>
+
+  <!-- displays the picture uploaded from the native camera -->
+  <img id="pictureFromCamera" />
+
     </body>
 
 </html>
