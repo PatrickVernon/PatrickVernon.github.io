@@ -1,23 +1,23 @@
 const imageInput = document.getElementById('img-input');
 
 imageInput.addEventListener('change', event => {
-  // 👇️ Save the image to localStorage
-  const image = event.target.files[0];
-  const reader = new FileReader();
+  const imageFiles = event.target.files;
 
-  reader.addEventListener('load', () => {
-    localStorage.setItem('image', reader.result);
+  Array.from(imageFiles).forEach((image, index) => {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+      localStorage.setItem(`img-${index}`, reader.result);
+    });
+
+    if (image) {
+      reader.readAsDataURL(image);
+    }
   });
 
-  if (image) {
-    reader.readAsDataURL(image);
-  }
+  const imageTags = document.querySelectorAll('#img-0, #img-1');
 
-  // 👇️ Take the image from localStorage
-  // and display it
-  const newImage = document.getElementById(
-    'img-from-local-storage',
-  );
-
-  newImage.src = localStorage.getItem('image');
+  imageTags.forEach((img, index) => {
+    img.src = localStorage.getItem(`img-${index}`);
+  });
 });
