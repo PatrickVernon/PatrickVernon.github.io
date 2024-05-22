@@ -19,6 +19,6 @@ body{
     padding:0px;
     margin:0px;
     touch-action: pan-y;
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
 }
