@@ -15,5 +15,6 @@
 }
 
 body{
+    padding:0px;
     touch-action: pan-y;
 }
