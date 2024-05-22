@@ -1,5 +1,9 @@
 const imageInput = document.getElementById('cameraFileInput');
 
+document.ontouchmove = function(event){
+  event.preventDefault();
+}
+
 imageInput.addEventListener('change', event => {
   // 👇️ Save the image to localStorage
   const image = event.target.files[0];
