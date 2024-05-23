@@ -36,6 +36,14 @@ button{
     border-color: white;
 }
 
+#btnCamera::file-selector-button {
+    width:70px;
+    height:70px;
+    background-color: grey;
+    border-width: 1px;
+    border-color: white;
+}
+
 .contentCard{
     width:100%;
     height: 200px;
