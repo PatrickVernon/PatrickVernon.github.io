@@ -10,7 +10,6 @@
         <meta name="HandheldFriendly" content="true"/>
         <!--Apple remove address bar-->
         <meta name="apple-mobile-web-app-capable" content="yes" />
-  
     </head>
 
     <body>
@@ -19,7 +18,7 @@
       </div>
 
       <div id="content">
-        <div class="contentCard" onclick="window.open('content1.html','mywindow')">
+        <div class="contentCard" onclick="window.open('content1.html','_parent')">
           <img src="1.jpg" alt="" class="contentImg">
           <p>Image Description</p>
         </div>
@@ -55,8 +54,8 @@
       </div>
 
       <div id="navBar">
-        <button onclick="window.open('index.html','_self')">Home</button>
-        <input id="btnCamera" type="file" accept="image/*" capture="environment"/>
+        <button onclick="window.open('index.html','_parent')">Home</button>
+        <span><input id="btnCamera" type="file" accept="image/*" capture="environment"/></span>
         <button>Gallery</button>
       </div>
 

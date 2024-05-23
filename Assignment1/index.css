@@ -1,7 +1,7 @@
 body{
     padding:0px;
     margin:0px;
-    overflow:hidden;
+    overflow:hidden; /*stop page from scrolling*/
 }
 
 #topBar{
@@ -15,8 +15,8 @@ body{
     background-color: grey;
     width:100%;
     height:800px;
-    overflow-y: scroll;
-    overflow-x:hidden;
+    overflow-y: scroll; /*scroll central div*/
+    overflow-x:hidden;  /*stop central div from moving horizontal*/
 }
 
 #navBar{
@@ -36,6 +36,7 @@ button{
     border-color: white;
 }
 
+/*style file selector button*/
 #btnCamera::file-selector-button {
     width:70px;
     height:70px;
@@ -55,5 +56,4 @@ button{
 
 .contentImg{
     height:80%;
-
 }
