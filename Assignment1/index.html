@@ -1,26 +1,50 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="utf-8" />
-  	<title>Cross-device Address Bar Hide</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <!--Head section test comment-->
+    <head>
+        <title>Lesson4</title>
 
-  <body>
+        <link rel="stylesheet" href="lesson4.css" >
+        <script src="lesson4.js"></script>
+        <!--Stop Scrolling-->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <!--Apple remove address bar-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+    </head>
 
-    <div id="topBar">
+    <body>
+        <div id="fullPage">
+          <p style="color:red;">This page should not be scalable</p>  
+          <button style="width:100%; height:100px;" onclick="t(event);">Click Me!</button>
+        </div>
 
-    </div>
+ <!-- The `label` is attached to the hidden file input -->
+ <label for="cameraFileInput">
+    <span class="btn">Open camera</span>
 
-    <div id="content">
+    <!-- The hidden file `input` for opening the native camera -->
+    <input
+      id="cameraFileInput"
+      type="file"
+      accept="image/*"
+      capture="environment"
+    />
+  </label>
 
-    </div>
+  <input type="file" accept="image/*" capture="camera" id="photo">
+  <label for="photo">
+    Second Camera
+  </label>
 
-    <div id="navBar">
+  <!-- displays the picture uploaded from the native camera -->
+  <img id="pictureFromCamera" />
 
-    </div>
+<div id="navBar">
+  <button id="btnHome"></button>
+  <button id="btnCam"></button>
+  <button id="btnGallery"></button>
+</div>
 
-  </body>
+    </body>
+
 </html>
