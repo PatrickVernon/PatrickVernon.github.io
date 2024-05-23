@@ -14,7 +14,8 @@ body{
 #content{
     background-color: grey;
     width:100%;
-    height:auto;
+    height:800px;
+    overflow-y: scroll;
 }
 
 #navBar{
@@ -32,4 +33,13 @@ button{
     background-color: grey;
     border-width: 1px;
     border-color: white;
+}
+
+.contentCard{
+    width:100%;
+    height: 200px;
+    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
